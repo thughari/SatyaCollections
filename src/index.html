@@ -1,14 +1,56 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <base href="/SatyaCollections">
-  <meta charset="utf-8">
-  <title>SatyaCollections</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/png" href="assets/Logo.png">
-</head>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Satya Collections</title>
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="assets/Logo.png">
+  </head>
+
 <body>
+  <header>
+    <a href="#" class="logo"><div>
+      <img src="assets/Logo.png" alt="logo">
+      <h3 style="float: left;margin: 35px 10px 0;font-size: 26px;">Satya Collections</h3>
+    </div></a>
+    <div class="bx bx-menu" id="menu-icon"></div>
+  
+    <ul class="navbar">
+      <li><a href="#Home" >Home</a></li>
+      <li><a href="#Bangles">Bangles</a></li>
+      <li><a href="#Chains">Chains</a></li>
+      <li><a href="#Necklace">Necklace</a></li>
+      <li><a href="#Other Jewels">Other Jewels</a></li>
+      <li><a href="#Contact">Contact</a></li>
+      <li><a href="#About Us">About Us</a></li>
+    </ul>
+  
+    <div class="icons">
+      <a href="#"><i class='bx bx-search'></i></a>
+      <a href="#"><i class='bx bxs-user-circle' ></i></a>
+      <a href="#"><i class='bx bxs-shopping-bag' ></i></a>
+    </div>
+
+    <script>
+      let menu = document.querySelector('#menu-icon');
+      let navbar = document.querySelector('.navbar');
+
+      menu.onclick = () => {
+      menu.classList.toggle('bx-x');
+      navbar.classList.toggle('active');
+      };
+
+      window.onscroll = () => {
+      menu.classList.remove('bx-x');
+      navbar.classList.remove('active');
+      };
+    </script>
+
+  </header>
   <app-root></app-root>
+  <app-footer></app-footer>
 </body>
 </html>
