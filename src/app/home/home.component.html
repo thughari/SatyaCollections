@@ -4,52 +4,12 @@
   </div>
   
   <div class="gallery">
-    <div class="content">
-      <img src="assets/sample.jpg" alt="">
-      <h5>BANGLES</h5>
-      <p>View All &gt;</p>
-    </div>
-  
-    <div class="content">
-      <img src="assets/sample.jpg" alt="">
-      <h5>HARAM</h5>
-      <p>View All &gt;</p>
-    </div>
-  
-    <div class="content">
-      <img src="assets/sample.jpg" alt="">
-      <h5>CHOKERS</h5>
-      <p>View All &gt;</p>
-    </div>
-  
-    <div class="content">
-      <img src="assets/sample.jpg" alt="">
-      <h5>EARRINGS</h5>
-      <p>View All &gt;</p>
-    </div>
-  
-    <div class="content">
-      <img src="assets/sample.jpg" alt="">
-      <h5>TIKKA</h5>
-      <p>View All &gt;</p>
-    </div>
-  
-    <div class="content">
-      <img src="assets/sample.jpg" alt="">
-      <h5>HIPBELTS</h5>
-      <p>View All &gt;</p>
-    </div>
-  
-    <div class="content">
-      <img src="assets/sample.jpg" alt="" >
-      <h5>OTHERS1</h5>
-      <p>View All &gt;</p>
-    </div>
-  
-    <div class="content">
-      <img src="assets/sample.jpg" alt="">
-      <h5>OTHERS2</h5>
-      <p>View All &gt;</p>
+    <div class="content" *ngFor="let i of category">
+      <div class="content" routerLink="/products">
+        <img src="assets/sample.jpg" alt="">
+        <h5>{{i}}</h5>
+        <p>View All &gt;</p>
+      </div>
     </div>
   </div>
   

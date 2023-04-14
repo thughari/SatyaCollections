@@ -1,0 +1,19 @@
+section{
+    margin-top: 50px
+}
+
+.count {
+    right: 111px;
+    position: absolute;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  
+  

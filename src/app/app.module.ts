@@ -5,6 +5,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
+import { ProductsListComponent } from './products-list/products-list.component';
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
+import { LoginComponent } from './login/login.component';
 
 
 
@@ -12,7 +16,11 @@ import { HomeComponent } from './home/home.component';
   declarations: [
     AppComponent,
     FooterComponent,
-    HomeComponent  ],
+    HomeComponent,
+    ProductsListComponent,
+    AboutComponent,
+    ContactComponent,
+    LoginComponent  ],
   imports: [
     BrowserModule,
     AppRoutingModule

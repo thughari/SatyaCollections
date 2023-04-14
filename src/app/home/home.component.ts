@@ -11,5 +11,6 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  category:string[]=['BANGLES','HARAM','CHOKERS','EARRINGS','TIKKA','HIPBELTS','OTHERS1','OTHERS2'];
 
 }
